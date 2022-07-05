@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { countStore } from '@/stores/index'
 const count = computed(() => countStore().count)
 function inc() {
