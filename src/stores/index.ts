@@ -5,7 +5,7 @@ interface State {
 export const countStore = defineStore('countStore', {
   persist: true,
   state: (): State => ({
-    count: 0
+    count: 0,
   }),
   actions: {
     setNumber(n: number) {
@@ -13,8 +13,8 @@ export const countStore = defineStore('countStore', {
     },
     increase() {
       this.count = this.count + 1
-    }
-  }
+    },
+  },
 })
 
 export const a = 1
