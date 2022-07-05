@@ -1,11 +1,12 @@
 <script lang="ts" setup>
+import { computed } from 'vue'
 import { countStore } from '@/stores/index'
-import { computed } from 'vue';
 const count = computed(() => countStore().count)
 function inc() {
   countStore().increase()
 }
 </script>
+
 <template>
   <div class="my-16 text-2xl text-center text-slate-700 font-bold">
     <h4>store width persist demo</h4>
