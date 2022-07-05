@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "mock": "nodemon --watch src/mock -e ts --exec msv src/mock",
     "build": "vue-tsc --noEmit && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -19,8 +20,10 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@wn90674/mock-server": "^0.1.2",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.19.0",
+    "nodemon": "^2.0.18",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.4",
     "typescript": "^4.5.4",

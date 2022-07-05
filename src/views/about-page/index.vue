@@ -1,10 +1,16 @@
 <script lang="ts" setup>
 import { computed, onMounted } from 'vue'
 import { countStore } from '@/stores/index'
+import { login } from '@/api/user'
 const count = computed(() => countStore().count)
 function inc() {
   countStore().increase()
 }
+
+onMounted(async () => {
+  const userInfo = await login()
+  console.error(userInfo)
+})
 </script>
 
 <template>

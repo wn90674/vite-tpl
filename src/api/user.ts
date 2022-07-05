@@ -1,5 +1,6 @@
+import type { UserInfo } from '../mock/user.mock'
 import service from '@/service'
 
-export const userInfo = () => {
-  return service.post<{ a: 1 }>('/aaa')
+export const login = () => {
+  return service.post<UserInfo>('/login')
 }
