@@ -1,4 +1,4 @@
-type MockNumber = '@number'
+type MockNumber = '@natural(0,100)'
 export interface UserInfo {
   id: string
   userName: string
@@ -10,7 +10,7 @@ export const login = defineMockData<UserInfo>({
   data: {
     id: '@id',
     userName: '@cname',
-    age: 40,
+    age: '@natural(0,100)',
   },
 })
 
