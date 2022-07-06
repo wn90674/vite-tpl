@@ -8,19 +8,20 @@
     "build": "vue-tsc --noEmit && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run"
   },
   "dependencies": {
     "axios": "^1.0.0-alpha.1",
     "pinia": "^2.0.14",
     "pinia-plugin-persistedstate": "^1.6.1",
-    "vue": "^3.2.25",
+    "vue": "^3.2.37",
     "vue-router": "^4.1.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
     "@vitejs/plugin-vue": "^2.3.3",
-    "@wn90674/mock-server": "^0.1.2",
+    "@wn90674/mock-server": "^0.1.3",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.19.0",
     "nodemon": "^2.0.18",
@@ -28,6 +29,7 @@
     "tailwindcss": "^3.1.4",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
+    "vitest": "^0.17.0",
     "vue-tsc": "^0.38.2"
   }
 }

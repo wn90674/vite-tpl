@@ -18,7 +18,7 @@ onMounted(async () => {
     <h4>store width persist demo</h4>
     <div class="my-4">
       <input class="w-16 font-bold text-sky-500 inline-block outline-none pointer-events-none select-none" type="text" :value="count">
-      <input class="text-xl rounded  hover:cursor-pointer outline outline-purple-300 outline-1 px-2 py-1 hover:text-white hover:bg-violet-700 transition-colors duration-300" type="button" value="increase" @click="inc">
+      <input class="text-xl rounded  hover:cursor-pointer outline outline-purple-300 outline-1 px-2 py-1 hover:text-white shadow shadow-violet-300 hover:bg-violet-500 transition-colors duration-300" type="button" value="increase" @click="inc">
     </div>
   </div>
 </template>
